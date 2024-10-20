@@ -1,11 +1,14 @@
-name: "Simple JavaScript Action"
-description: "Una acción simple escrita en JavaScript"
-inputs:
-  who-to-greet:
-    description: "A quién saludar"
-    required: true
-    default: "Mundo"
 
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
-  using: "node16"
-  main: "index.js"
+  using: 'node20'
+  main: 'dist/index.js'
