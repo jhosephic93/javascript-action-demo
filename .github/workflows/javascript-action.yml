@@ -1,0 +1,10 @@
+name: JavaScript Action Demo
+on: [push]
+jobs:
+  run-javascript-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./  # Asume que la acción está en la raíz del repo
+        with:
+          who-to-greet: "JavaScript Action Demo"

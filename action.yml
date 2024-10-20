@@ -1,0 +1,11 @@
+name: "Simple JavaScript Action"
+description: "Una acción simple escrita en JavaScript"
+inputs:
+  who-to-greet:
+    description: "A quién saludar"
+    required: true
+    default: "Mundo"
+
+runs:
+  using: "node16"
+  main: "index.js"
